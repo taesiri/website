@@ -10,8 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" href="./images/favicon.ico">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPFW7MW08H"></script>
@@ -21,6 +20,21 @@
     gtag('js', new Date());
 
     gtag('config', 'G-KPFW7MW08H');
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
   </script>
 
 </head>
@@ -37,25 +51,35 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
-                    <name>Mohammad Reza Taesiri</name>
+                  <h1 class="text-3xl font-bold mb-4">Mohammad Reza Taesiri</h1>
                   </p>
-                  <p>I am a second-year Ph.D. student at the <a href="https://www.ualberta.ca/index.html">University of
-                      Alberta</a> in Edmonton, where I work on the intersection of computer vision, explainable machine
+                  <p>I am currently a second-year Ph.D. student at the <a href="https://www.ualberta.ca/index.html"
+                      class="text-blue-600 hover:text-blue-800">University of
+                      Alberta</a> in Edmonton, focusing on the intersection of computer vision, explainable machine
                     learning, and video games.</p>
                   </p>
+                  <br>
 
-                  <p style="text-align:center">
-                    <a href="mailto:mtaesiri@gmail.com">Email</a> &nbsp/&nbsp
-                    <a href="data/Taesiri_CV.pdf">CV</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?user=-egLZy8AAAAJ&hl=en">Google Scholar</a>
-                    &nbsp/&nbsp
-                    <a href="https://twitter.com/taesiri">Twitter</a> &nbsp/&nbsp
-                    <a href="https://sketchfab.com/mtaesiri">Sketchfab</a> &nbsp/&nbsp
-                    <a href="https://www.youtube.com/@mtaesiri">Youtube</a> &nbsp/&nbsp
-                    <a href="https://huggingface.co/taesiri">HuggingFace</a> &nbsp/&nbsp
-                    <a href="https://wandb.ai/mtaesiri">Wandb</a> &nbsp/&nbsp
-                    <a href="https://github.com/taesiri/">Github</a>
-                  </p>
+                  <div class="flex flex-wrap justify-center mt-4">
+                    <a href="mailto:mtaesiri@gmail.com" class="mr-2">Email</a>
+                    <span class="mx-1">/</span>
+                    <a href="data/Taesiri_CV.pdf" class="mx-2">CV</a>
+                    <span class="mx-1">/</span>
+                    <a href="https://scholar.google.com/citations?user=-egLZy8AAAAJ&hl=en" class="mx-2">Google
+                      Scholar</a>
+                    <span class="mx-1">/</span>
+                    <a href="https://twitter.com/taesiri" class="mx-2">Twitter</a>
+                    <span class="mx-1">/</span>
+                    <a href="https://sketchfab.com/mtaesiri" class="mx-2">Sketchfab</a>
+                    <span class="mx-1">/</span>
+                    <a href="https://www.youtube.com/@mtaesiri" class="mx-2">Youtube</a>
+                    <span class="mx-1">/</span>
+                    <a href="https://huggingface.co/taesiri" class="mx-2">HuggingFace</a>
+                    <span class="mx-1">/</span>
+                    <a href="https://wandb.ai/mtaesiri" class="mx-2">Wandb</a>
+                    <span class="mx-1">/</span>
+                    <a href="https://github.com/taesiri/" class="ml-2">Github</a>
+                  </div>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%">
                   <a href="images/588431.jpeg"><img style="width:100%;max-width:100%" alt="profile photo"
@@ -64,28 +88,24 @@
               </tr>
             </tbody>
           </table>
+          <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-4">Research</h2>
+            <p>
+              I am broadly interested in computer vision and machine learning, with a focus on explainable machine
+              learning. I am also interested in applying Foundation models to real-world problems, such as video
+              game testing and quality control.
+            </p>
+          </div>
+          <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-4">Recent Highlights</h2>
+            <!-- Add the rest of the content here -->
+          </div>
+          </div>
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Research</heading>
-                  <p>
-                    I am broadly interested in computer vision and machine learning, with a focus on explainable machine
-                    learning. I am also interested in applying Foundation models to real-world problems, such as video
-                    game testing and quality control.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
 
               <br>
-              <heading>Recent Highlights</heading>
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -236,28 +256,9 @@
 
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <!-- <tbody>
-              <tr>
-                <td>
-                  <heading>Misc (unsorted)</heading>
-                </td>
-              </tr>
-            </tbody> -->
           </table>
           <table width="100%" align="center" border="0" cellpadding="20">
             <tbody>
-
-              <!-- <tr>
-                <td width="75%" valign="center">
-                  <p> Inteligent Image Captioning using Detic and ChatGPT. <a
-                      href="https://huggingface.co/spaces/taesiri/DeticChatGPT">
-                      <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue" alt="Demo">
-                  </p>
-
-                  <br>
-                </td>
-              </tr> -->
-
             </tbody>
           </table>
           <table
